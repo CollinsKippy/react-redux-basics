@@ -1,3 +1,14 @@
 body {
   font-family: 'Poppins', sans-serif;
+  margin-top: 2rem;
+}
+
+h1 {
+  color: green;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 2rem;
+}
+
+button {
+  margin-right: 0.5rem;
 }
