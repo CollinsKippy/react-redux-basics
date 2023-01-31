@@ -4,8 +4,16 @@ import Button from 'react-bootstrap/Button';
 import { increment, decrement, increaseByAmount, reset } from './counterSlice';
 import { useState, useEffect } from 'react';
 
-const counterStyle = {
-  marginTop: 20,
+const styles = {
+  container: {
+    marginTop: 20,
+  },
+  countResult: {
+    color: 'blue',
+    fontWeight: 500,
+    fontSize: 48,
+    marginBottom: 16,
+  },
 };
 
 const Counter = () => {
@@ -14,10 +22,10 @@ const Counter = () => {
   const [incrementer, setIncrementer] = useState(0);
 
   return (
-    <div style={counterStyle}>
+    <div style={styles.container}>
       <div className="row">
         <div className="col-md-6">
-          <h2>{count}</h2>
+          <h2 style={styles.countResult}>{count}</h2>
 
           <input
             type="number"
